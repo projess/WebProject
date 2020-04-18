@@ -25,6 +25,7 @@ namespace myMVC.Controllers
 
         public IActionResult Privacy()
         {
+
             return View();
         }
 

@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using myMVC.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace myMVC
 {
@@ -24,6 +26,9 @@ namespace myMVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<MvcItemContext>(options =>
+          options.UseSqlServer(Configuration.GetConnectionString("MvcItemContext")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
