@@ -13,15 +13,17 @@ namespace myMVC.Controllers
     public class ItemsController : Controller
     {
         private readonly MvcItemContext _context;
-
+      
+        
         public ItemsController(MvcItemContext context)
         {
             _context = context;
         }
 
         // GET: Items
-        public async Task<IActionResult> Index(string searchString,decimal priceRange)
+        public async Task<IActionResult> Index(string searchString,string sortBy)
         {
+            
             var items = from i in _context.Item 
                         select i;
            
@@ -29,9 +31,17 @@ namespace myMVC.Controllers
             {
                 items = items.Where(s => s.Name.Contains(searchString));
             } 
-            IEnumerable<Item> query = items.OrderBy(unit => unit.Price);
-           // return View(await items.ToListAsync()); 
-            return View( query);
+            if(sortBy == "1")
+            {
+                 items = items.OrderBy(unit => unit.Price);
+            }
+            else if(sortBy == "2")
+            {
+                items = items.OrderByDescending(unit => unit.Price);
+            }
+           
+            return View(await items.ToListAsync()); 
+           
         }
 
         // GET: Items/Details/5
