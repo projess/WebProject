@@ -18,57 +18,31 @@
 </form>
 
 <form asp-controller="Items" asp-action="Index">
- 
 
-   Sort by:  @Html.DropDownList("Sortby", new SelectListItem[]
-    {
-         new SelectListItem() { Text = "Featured", Value = "0" },
-         new SelectListItem() { Text = "Price - low to high", Value = "1" },
-         new SelectListItem() { Text = "Price - high to low", Value = "2" }},
-         new
-         {
-             @onchange = @"form.submit();"
-         })
+
+    Sort by:  @Html.DropDownList("Sortby", new SelectListItem[]
+{
+new SelectListItem() { Text = "Featured", Value = "0" },
+new SelectListItem() { Text = "Price - low to high", Value = "1" },
+new SelectListItem() { Text = "Price - high to low", Value = "2" }},
+new
+{
+    @onchange = @"form.submit();"
+})
 </form>
 
 
 <br />
+@for (int i = 0; i < Model.Count(); i++)
+{
+<div style="width:25%;height:20%; padding-bottom:10%; float:left">
+    @Html.DisplayFor(modelItem => Model.ElementAt(i).Name)<br />
+    @Html.DisplayFor(modelItem => Model.ElementAt(i).Description)<br />
+    @Html.DisplayFor(modelItem => Model.ElementAt(i).Price)<br />
+    <a asp-action="Edit" asp-route-id="@Model.ElementAt(i).Id">Edit</a> |
+    <a asp-action="Details" asp-route-id="@Model.ElementAt(i).Id">Details</a> |
+    <a asp-action="Delete" asp-route-id="@Model.ElementAt(i).Id">Delete</a>
 
+</div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+}
