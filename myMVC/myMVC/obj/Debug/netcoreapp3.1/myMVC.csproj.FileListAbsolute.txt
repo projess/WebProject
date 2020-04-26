@@ -1,9 +1,3 @@
-C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.csproj.CoreCompileInputs.cache
-C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.RazorAssemblyInfo.cache
-C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.RazorAssemblyInfo.cs
-C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.AssemblyInfoInputs.cache
-C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.AssemblyInfo.cs
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -146,7 +140,12 @@ C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\bin\Debug\netcoreapp3.1\runtimes
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.csprojAssemblyReference.cache
+C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.csproj.CoreCompileInputs.cache
+C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.RazorAssemblyInfo.cache
+C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.RazorAssemblyInfo.cs
+C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.AssemblyInfoInputs.cache
+C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.AssemblyInfo.cs
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.TagHelpers.input.cache
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.TagHelpers.output.cache
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.RazorCoreGenerate.cache
@@ -173,3 +172,4 @@ C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\staticwe
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.dll
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.pdb
 C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.genruntimeconfig.cache
+C:\Users\v-jekha\source\repos\covid\myMVC\myMVC\obj\Debug\netcoreapp3.1\myMVC.csprojAssemblyReference.cache

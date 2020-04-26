@@ -35,10 +35,14 @@ new
 <br />
 @for (int i = 0; i < Model.Count(); i++)
 {
-<div style="width:25%;height:20%; padding-bottom:10%; float:left">
+    var f = @"Content\" + Model.ElementAt(i).Name+".jpg";
+<div style="width:25%;height:20%; padding-bottom:5%; float:left">
+   
     @Html.DisplayFor(modelItem => Model.ElementAt(i).Name)<br />
+    <img src="@f" alt="Pic" style="width:128px;height:150px" ;><br />
     @Html.DisplayFor(modelItem => Model.ElementAt(i).Description)<br />
     @Html.DisplayFor(modelItem => Model.ElementAt(i).Price)<br />
+
     <a asp-action="Edit" asp-route-id="@Model.ElementAt(i).Id">Edit</a> |
     <a asp-action="Details" asp-route-id="@Model.ElementAt(i).Id">Details</a> |
     <a asp-action="Delete" asp-route-id="@Model.ElementAt(i).Id">Delete</a>
