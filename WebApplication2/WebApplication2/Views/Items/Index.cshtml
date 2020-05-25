@@ -1,0 +1,49 @@
+﻿@model IEnumerable<WebApplication2.Models.Item>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Items" asp-action="Index">
+    <p>
+        Search: <input type="text" name="searchString">
+        <input type="submit" />
+    </p>
+</form>
+
+<form asp-controller="Items" asp-action="Index">
+
+
+    Sort by:  @Html.DropDownList("Sortby", new SelectListItem[]
+{
+new SelectListItem() { Text = "Featured", Value = "0" },
+new SelectListItem() { Text = "Price - low to high", Value = "1" },
+new SelectListItem() { Text = "Price - high to low", Value = "2" }},
+new
+{
+@onchange = @"form.submit();"
+})
+</form>
+
+
+<br />
+@for (int i = 0; i < Model.Count(); i++)
+{
+    var f = @"Content\" + Model.ElementAt(i).Name + ".jpg";
+    <div style="width:25%;height:20%; padding-bottom:5%; float:left">
+
+        @Html.DisplayFor(modelItem => Model.ElementAt(i).Name)<br />
+        <img src="@f" alt="Pic" style="width:128px;height:150px" ;><br />
+        @Html.DisplayFor(modelItem => Model.ElementAt(i).Description)<br />
+        @Html.DisplayFor(modelItem => Model.ElementAt(i).Price)<br />
+
+        <a asp-action="Edit" asp-route-id="@Model.ElementAt(i).Id">Edit</a> |
+        <a asp-action="Details" asp-route-id="@Model.ElementAt(i).Id">Details</a> |
+        <a asp-action="Delete" asp-route-id="@Model.ElementAt(i).Id">Delete</a>
+
+    </div>
+}
