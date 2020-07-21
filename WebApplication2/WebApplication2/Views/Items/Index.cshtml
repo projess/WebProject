@@ -8,9 +8,10 @@
     <a asp-action="Create">Create New</a>
 </p>
 
+
 <form asp-controller="Items" asp-action="Index">
     <p>
-        Search: <input type="text" name="searchString">
+        Search by item Name (tap, shirt, etc.): <input type="text" name="searchString">
         <input type="submit" />
     </p>
 </form>
@@ -30,14 +31,16 @@ new
 </form>
 
 
-<br />
+<br /><br/></br>
+
 @for (int i = 0; i < Model.Count(); i++)
 {
     var f = @"Content\" + Model.ElementAt(i).Name + ".jpg";
     <div style="width:25%;height:20%; padding-bottom:5%; float:left">
 
         @Html.DisplayFor(modelItem => Model.ElementAt(i).Name)<br />
-        <img src="@f" alt="Pic" style="width:128px;height:150px" ;><br />
+        <img src="@f" alt="Pic" style="width:200px;height:250px" ;><br />
+
         @Html.DisplayFor(modelItem => Model.ElementAt(i).Description)<br />
         @Html.DisplayFor(modelItem => Model.ElementAt(i).Price)<br />
 
