@@ -1,3 +1,3 @@
-# COVID
-Working on this project during quarantine.
+# WebProject
+Merchandise website. Products viewable by clicking - Merchandise on top right.
 
